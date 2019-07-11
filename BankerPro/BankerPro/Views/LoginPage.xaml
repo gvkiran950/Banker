@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BankerPro.Views.LoginPage"
+             xmlns:viewModels="clr-namespace:BankerPro.ViewModels">
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="500" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="xamarin_logo.png" BackgroundColor="#87CEFA"/>
+
+                <StackLayout Grid.Row="1">
+                    <Label HorizontalOptions="CenterAndExpand"
+                           FontSize="40" Text="Login"></Label>
+                    <Entry Placeholder="User name" Text="{Binding UserName}"></Entry>
+                    <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}"></Entry>
+                    <Label HorizontalOptions="EndAndExpand">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Forgot password"
+                                    TextColor="Blue"
+                                    TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label HorizontalOptions="CenterAndExpand" Text="--Or--"></Label>
+                    <Entry Placeholder="Enter Pin" IsPassword="True"></Entry>
+                    <Button Text="Login" Command="{Binding LoginCommand}"></Button>
+                </StackLayout>
+                <StackLayout Grid.Row="2">
+                    <Label HorizontalOptions="CenterAndExpand" Text="copy rights"></Label>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
