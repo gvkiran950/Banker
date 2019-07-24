@@ -9,11 +9,14 @@ namespace BankerPro
     public partial class App : Application
     {
        public static bool isLoggedIn = false;
+        public static string BaseUrl = "http://172.18.48.65/";
         public App()
         {
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            DependencyService.Register<UserService>();
+
             if (isLoggedIn)
                 MainPage = new AppShell();
             else

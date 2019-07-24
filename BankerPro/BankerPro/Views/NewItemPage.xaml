@@ -3,22 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              mc:Ignorable="d"
              x:Class="BankerPro.Views.NewItemPage"
              Title="New Item">
-    
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
         <ToolbarItem Text="Save" Clicked="Save_Clicked" />
     </ContentPage.ToolbarItems>
-    
+
     <ContentPage.Content>
+        <ScrollView>
+            
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <map:Map x:Name="mapAddress" Grid.Row="0" MapType="Satellite" HasScrollEnabled="True">
+                        <map:Map.ItemTemplate>
+                            <DataTemplate>
+                                <map:Pin 
+                        Position="{Binding Position}"
+                        Address="{Binding Address}"
+                        Label="{Binding PlaceName}"/>
+                            </DataTemplate>
+                        </map:Map.ItemTemplate>
+                    </map:Map>
+                </Grid>
+                <Label Text="Text" FontSize="Medium" />
             <Entry Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small" />
             <Label Text="Description" FontSize="Medium" />
             <Editor Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
+
+            <ListView ItemsSource="{Binding values}" />
+
+           
+
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
-    
+
 </ContentPage>
