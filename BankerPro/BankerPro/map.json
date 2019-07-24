@@ -1,0 +1,261 @@
+[
+  {
+    "PlaceName": "Opus Bank",
+    "Address": "15600 Northeast 8th Street, Bellevue",
+    "Position": {
+      "Latitude": 47.617328643798828,
+      "Longitude": -122.13153076171875
+    },
+    "Location": {
+      "lat": 47.61733,
+      "lng": -122.131531
+    }
+  },
+  {
+    "PlaceName": "Banner Bank",
+    "Address": "13033 Bel-Red Road, Bellevue",
+
+    "Position": {
+      "Latitude": 47.621288299560547,
+      "Longitude": -122.16651153564453
+    },
+    "Location": {
+      "lat": 47.62129,
+      "lng": -122.166512
+    }
+  },
+  {
+    "PlaceName": "Bank of America Financial Center",
+    "Address": "2400 148th Avenue Northeast, Redmond",
+
+    "Position": {
+      "Latitude": 47.631797790527344,
+      "Longitude": -122.14242553710938
+    },
+    "Location": {
+      "lat": 47.6317978,
+      "lng": -122.142426
+    }
+  },
+  {
+    "PlaceName": "Qualstar Credit Union - Redmond Branch",
+    "Address": "2115 152nd Avenue Northeast, Redmond",
+
+    "Position": {
+      "Latitude": 47.629074096679688,
+      "Longitude": -122.13869476318359
+    },
+    "Location": {
+      "lat": 47.6290741,
+      "lng": -122.138695
+    }
+  },
+  {
+    "PlaceName": "Wells Fargo Bank",
+    "Address": "2201 156th Avenue Northeast, Bellevue",
+
+    "Position": {
+      "Latitude": 47.6293830871582,
+      "Longitude": -122.13278198242188
+    },
+    "Location": {
+      "lat": 47.6293831,
+      "lng": -122.132782
+    }
+  },
+  {
+    "PlaceName": "Wells Fargo Bank",
+    "Address": "8502 160th Avenue Northeast, Redmond",
+
+    "Position": {
+      "Latitude": 47.6789665222168,
+      "Longitude": -122.12683868408203
+    },
+    "Location": {
+      "lat": 47.6789665,
+      "lng": -122.126839
+    }
+  },
+  {
+    "PlaceName": "Banner Bank",
+    "Address": "7950 164th Avenue Northeast, Redmond",
+
+    "Position": {
+      "Latitude": 47.674560546875,
+      "Longitude": -122.12126922607422
+    },
+    "Location": {
+      "lat": 47.67456,
+      "lng": -122.121269
+    }
+  },
+  {
+    "PlaceName": "Wells Fargo Bank",
+    "Address": "1915 140th Ave NE Ste D1a, Bellevue",
+    
+    "Position": {
+      "Latitude": 47.627033233642578,
+      "Longitude": -122.15412139892578
+    },
+    "Location": {
+      "lat": 47.6270332,
+      "lng": -122.154121
+    }
+  },
+  {
+    "PlaceName": "Chase Bank",
+    "Address": "1955 156th Avenue Northeast, Bellevue",
+
+    "Position": {
+      "Latitude": 47.627532958984375,
+      "Longitude": -122.13320159912109
+    },
+    "Location": {
+      "lat": 47.627533,
+      "lng": -122.1332
+    }
+  },
+  {
+    "PlaceName": "Washington Federal",
+    "Address": "16900 Redmond Way, Redmond",
+
+    "Position": {
+      "Latitude": 47.672042846679688,
+      "Longitude": -122.11428070068359
+    },
+    "Location": {
+      "lat": 47.6720428,
+      "lng": -122.114281
+    }
+  },
+  {
+    "PlaceName": "East West Bank",
+    "Address": "2331 130th Avenue Northeast #104, Bellevue",
+
+    "Position": {
+      "Latitude": 47.630611419677734,
+      "Longitude": -122.16859436035156
+    },
+    "Location": {
+      "lat": 47.63061,
+      "lng": -122.168594
+    }
+  },
+  {
+    "PlaceName": "Sound Credit Union",
+    "Address": "Kelsey Creek Center, 40 148th Avenue Southeast, Bellevue",
+
+    "Position": {
+      "Latitude": 47.609691619873047,
+      "Longitude": -122.14250183105469
+    },
+    "Location": {
+      "lat": 47.60969,
+      "lng": -122.1425
+    }
+  },
+  {
+    "PlaceName": "Union Bank",
+    "Address": "17000 Avondale Way, Redmond",
+
+    "Position": {
+      "Latitude": 47.672584533691406,
+      "Longitude": -122.11431884765625
+    },
+    "Location": {
+      "lat": 47.6725845,
+      "lng": -122.114319
+    }
+  },
+  {
+    "PlaceName": "KeyBank",
+    "Address": "15110 Northeast 24th Street, Redmond",
+
+    "Position": {
+      "Latitude": 47.631832122802734,
+      "Longitude": -122.13895416259766
+    },
+    "Location": {
+      "lat": 47.6318321,
+      "lng": -122.138954
+    }
+  },
+  {
+    "PlaceName": "Chase Bank",
+    "Address": "1320 156th Avenue Northeast, Bellevue",
+
+    "Position": {
+      "Latitude": 47.621479034423828,
+      "Longitude": -122.13184356689453
+    },
+    "Location": {
+      "lat": 47.62148,
+      "lng": -122.131844
+    }
+  },
+  {
+    "PlaceName": "1st Security Bank",
+    "Address": "14808 Northeast 24th Street, Redmond",
+
+    "Position": {
+      "Latitude": 47.632297515869141,
+      "Longitude": -122.14250183105469
+    },
+    "Location": {
+      "lat": 47.6322975,
+      "lng": -122.1425
+    }
+  },
+  {
+    "PlaceName": "KeyBank",
+    "Address": "16401 Redmond Way, Redmond",
+
+    "Position": {
+      "Latitude": 47.673553466796875,
+      "Longitude": -122.12117004394531
+    },
+    "Location": {
+      "lat": 47.6735535,
+      "lng": -122.12117
+    }
+  },
+  {
+    "PlaceName": "ATM (Bank of America)",
+    "Address": "7450 170th Avenue Northeast, Redmond",
+
+    "Position": {
+      "Latitude": 47.6708869934082,
+      "Longitude": -122.11262512207031
+    },
+    "Location": {
+      "lat": 47.670887,
+      "lng": -122.112625
+    }
+  },
+  {
+    "PlaceName": "Chase Bank",
+    "Address": "8010 164th Avenue Northeast, Redmond",
+
+    "Position": {
+      "Latitude": 47.675083160400391,
+      "Longitude": -122.12126922607422
+    },
+    "Location": {
+      "lat": 47.6750832,
+      "lng": -122.121269
+    }
+  },
+  {
+    "PlaceName": "Washington Federal",
+    "Address": "14801 NE, Bel-Red Road, Bellevue",
+
+    "Position": {
+      "Latitude": 47.626285552978516,
+      "Longitude": -122.14270782470703
+    },
+    "Location": {
+      "lat": 47.6262856,
+      "lng": -122.142708
+    }
+  }
+]

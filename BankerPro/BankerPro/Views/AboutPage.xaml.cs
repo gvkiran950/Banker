@@ -40,7 +40,7 @@ namespace BankerPro.Views
                 }
 
                 var resultObject = JsonConvert.DeserializeObject<Places>(text);
-
+                string json = JsonConvert.SerializeObject(resultObject);
                 foreach (var place in resultObject.results)
                 {
                     placesList.Add(new Place

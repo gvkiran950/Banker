@@ -11,10 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="map.json" />
     <None Remove="Places.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="map.json" />
     <EmbeddedResource Include="Places.json" />
   </ItemGroup>
 

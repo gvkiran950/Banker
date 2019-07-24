@@ -9,7 +9,7 @@ namespace BankerPro
     public partial class App : Application
     {
        public static bool isLoggedIn = false;
-        public static string BaseUrl = "http://172.18.48.65/";
+        public static string BaseUrl = "http://172.17.240.65/";
         public App()
         {
             InitializeComponent();
