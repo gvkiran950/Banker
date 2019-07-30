@@ -1,27 +1,41 @@
-﻿using BankerPro.Views;
+﻿using BankerPro.Models;
+using BankerPro.Views;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace BankerPro
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {
+        public List<MenuInfo> menuInfos { get; set; }
         public AppShell()
         {
             InitializeComponent();
-            this.BindingContext = this;
+            BindMenus();
         }
 
-        public Command GoBakCommand => new Command(async () => await GoBack());
-
-        public async Task GoBack()
+        void BindMenus()
         {
-            bool res = await Shell.Current.DisplayAlert("Alert", "Do you want lagout from app", "Ok", "Cancel");
-            if (res)
-                Application.Current.MainPage = new LoginPage();
+            menuInfos = new List<MenuInfo>();
+            menuInfos.Add(new MenuInfo { Title="Browse",Page = new ItemsPage(),Icon= "tab_feed.png" });
+            menuInfos.Add(new MenuInfo { Title = "About", Page = new AboutPage(),Icon= "tab_about.png" });
 
+            menuInfos.Select(x => new FlyoutItem {
+                Title = x.Title,
+                FlyoutIcon = x.Icon,
+                Items =
+                {                  
+                    new ShellContent
+                    {
+                        Content = x.Page                         
+                    }
+                }                
+            }).ForEach(Items.Add);
         }
+       
     }
 }

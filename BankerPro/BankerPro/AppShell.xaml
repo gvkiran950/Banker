@@ -8,9 +8,6 @@
        Title="BankerPro"
        x:Class="BankerPro.AppShell">
 
-    <Shell.BackButtonBehavior>
-        <BackButtonBehavior Command="{Binding GoBakCommand}"/>
-    </Shell.BackButtonBehavior>
     <!-- 
         Styles and Resources 
     -->
@@ -31,28 +28,57 @@
             <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
+    <Shell.ToolbarItems>
+        <ToolbarItem Text="Login" Order="Primary" Priority="1"/>
+    </Shell.ToolbarItems>
 
-    <!-- Your Pages -->
-    <TabBar>
-        <Tab Title="Browse" Icon="tab_feed.png">
-            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
-        </Tab>
-        <Tab Title="About" Icon="tab_about.png">
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
-        </Tab>
-    </TabBar>
-
-    <!-- Optional Templates 
-    // These may be provided inline as below or as separate classes.
-
-    // This header appears at the top of the Flyout.
     <Shell.FlyoutHeaderTemplate>
 	<DataTemplate>
-            <Grid>ContentHere</Grid>
+            <Grid BackgroundColor="Gray"
+              HeightRequest="200">
+                <Image Aspect="AspectFill"
+                   Source="icon.png"
+                   Opacity="0.6" />
+                <Label Text="Animals"
+                   TextColor="White"
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" />
+            </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
+    
+    <!-- Your Pages -->
+    
+    <!--<Shell.ItemTemplate>
+        <DataTemplate>
+            <FlyoutItem>
+            <ShellContent Title="About" Icon="tab_about.png" ContentTemplate="{DataTemplate local:AboutPage}" />
+            </FlyoutItem>
+        </DataTemplate>
+    </Shell.ItemTemplate>-->
+    <!--<ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}" />-->
+    <!--// Optional Templates 
+    // These may be provided inline as below or as separate classes.
 
-    // ItemTemplate is for ShellItems as displayed in a Flyout
+    // This header appears at the top of the Flyout.-->
+    <!--<Shell.FlyoutHeaderTemplate>
+	<DataTemplate>
+            <Grid BackgroundColor="Black"
+              HeightRequest="200">
+                <Image Aspect="AspectFill"
+                   Source="xamarinstore.jpg"
+                   Opacity="0.6" />
+                <Label Text="Animals"
+                   TextColor="White"
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>-->
+
+    <!--// ItemTemplate is for ShellItems as displayed in a Flyout
     <Shell.ItemTemplate>
         <DataTemplate>
             <ContentView>
@@ -68,8 +94,8 @@
                 Bindable Properties: Text, Icon
             </ContentView>
         </DataTemplate>
-    </Shell.MenuItemTemplate>
+    </Shell.MenuItemTemplate>-->
 
-    -->
+    
 
 </Shell>

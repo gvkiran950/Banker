@@ -1,5 +1,4 @@
-﻿using BankerPro.Services;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace BankerPro.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class LoaderPage : ContentPage
     {
-        public LoginPage()
+        public LoaderPage()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
     }
 }

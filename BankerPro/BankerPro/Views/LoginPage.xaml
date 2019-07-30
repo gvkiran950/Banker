@@ -18,7 +18,7 @@
                     <RowDefinition Height="500" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="xamarin_logo.png" BackgroundColor="#87CEFA"/>
+                <Image Grid.Row="0" Source="xamarin_logo.png" />
 
                 <StackLayout Grid.Row="1">
                     <Label HorizontalOptions="CenterAndExpand"
@@ -41,6 +41,9 @@
                     <Label HorizontalOptions="CenterAndExpand" Text="--Or--"></Label>
                     <Entry Placeholder="Enter Pin" IsPassword="True"></Entry>
                     <Button Text="Login" Command="{Binding LoginCommand}"></Button>
+                    <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                                       IsVisible="{Binding IsBusy}"/>
+                    
                 </StackLayout>
                 <StackLayout Grid.Row="2">
                     <Label HorizontalOptions="CenterAndExpand" Text="copy rights"></Label>

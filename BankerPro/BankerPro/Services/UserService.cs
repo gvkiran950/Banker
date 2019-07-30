@@ -87,5 +87,30 @@ namespace BankerPro.Services
                 throw ex;
             }
         }
+
+        //public async Task<string> LoginAsync(User user)
+        //{
+        //    try
+        //    {
+        //        var client = new RestClient(App.BaseUrl);
+        //        var request = new RestRequest("api/Accounts/login", Method.POST);
+        //        request.AddJsonBody(user);
+        //        // execute the request
+        //        var resp = await client.ExecuteAsync(request,);
+        //        if (resp.StatusCode == System.Net.HttpStatusCode.OK)
+        //        {
+        //            //string[] res = resp.Content.Split(':');
+        //            string response = JsonConvert.DeserializeObject<string>(resp.Content);
+        //            return response;
+        //        }
+        //        else
+        //            throw new Exception("something went wrong");
+              
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
     }
 }

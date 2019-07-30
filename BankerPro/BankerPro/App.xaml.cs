@@ -16,11 +16,9 @@ namespace BankerPro
 
             DependencyService.Register<MockDataStore>();
             DependencyService.Register<UserService>();
+            DependencyService.Register<ILoaderService>();
 
-            if (isLoggedIn)
-                MainPage = new AppShell();
-            else
-                MainPage = new LoginPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
